@@ -16,3 +16,15 @@ Tecnologias
 HTML, CSS, JavaScript
 Python (Flask)
 SQLite
+
+Observações
+Cada usuário só pode criar 1 time
+Cada time tem limite de 12 alunos
+Problemas comuns
+Banco não funciona: apaga o .db e cria de novo
+Time não cria: vê se a API tá rodando
+Login inválido: banco não foi criado direito
+Ideias futuras
+Ranking
+Pontuação
+Melhorar visual
