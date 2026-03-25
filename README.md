@@ -1,36 +1,41 @@
 Sistema de Interclasse
 
-Sistema simples pra organizar interclasse da escola. Dá pra criar times, adicionar alunos e ter um painel de admin pra controlar tudo.
+Sistema web simples para organizar campeonatos interclasse escolares. Permite criar times, adicionar alunos e gerenciar tudo por um painel administrativo.
 
-O que dá pra fazer
-Criar conta e fazer login
-Criar um time (1 por usuário)
-Ver os times cadastrados
-Adicionar alunos no time
+Funcionalidades
+Cadastro e login de usuários
+Criação de times (1 por usuário)
+Adicionar alunos ao time (limite de 12)
+Visualizar todos os times cadastrados
 
 
 Admin
 Ver todos os times
-Editar nome
-Excluir time
+Editar nome dos times
+Excluir times
 Adicionar/remover alunos
 
 
 Tecnologias
-HTML, CSS, JavaScript
-Python (Flask)
-SQLite
+Frontend: HTML, CSS, JavaScript
+Backend: Python (Flask)
+Banco de dados: SQLite
 
-Observações
+
+Regras
 Cada usuário só pode criar 1 time
-Cada time tem limite de 12 alunos
+Cada time pode ter no máximo 12 alunos
 
 
 Problemas comuns
-Banco não funciona: apaga o .db e cria de novo
-Time não cria: vê se a API tá rodando
-Login inválido: banco não foi criado direito
+Banco não funciona: apague o arquivo .db e rode novamente
+Time não cria: verifique se a API está rodando
+Login inválido: banco pode não ter sido criado corretamente
 
+
+Melhorias futuras
+Sistema de ranking e pontuação
+Melhorias visuais na interface
 
 Ideias futuras
 Ranking
