@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* CENTRAL */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.card {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    width: 320px;
+}
+
+/* INPUT */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BOTÃO PADRÃO FULL */
+.full {
+    width: 100%;
+}
+
+/* BOTÃO SAIR */
+.logout {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    padding: 8px 15px;
+    background: #ef4444;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* ADMIN BTN */
+.admin-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 1px solid #2563eb;
+    padding: 5px 10px;
+}
+
+/* DASHBOARD */
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-full {
+    grid-column: span 2;
+}
+
+/* LISTA */
+.list {
+    margin-top: 15px;
+}
+
+.item {
+    background: #1f2937;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}

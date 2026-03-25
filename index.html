@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Interclasse - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="admin-btn" onclick="window.location.href='admin.html'">
+    Admin
+</button>
+
+<div class="center">
+    <div class="card">
+
+        <h2>Login</h2>
+
+        <input type="text" id="user" placeholder="Usuário">
+        <input type="password" id="pass" placeholder="Senha">
+
+        <button onclick="login()">Entrar</button>
+
+        <hr style="margin:15px 0">
+
+        <h3>Registrar</h3>
+
+        <input type="text" id="newUser" placeholder="Usuário">
+        <input type="password" id="newPass" placeholder="Senha">
+
+        <button onclick="register()">Criar conta</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

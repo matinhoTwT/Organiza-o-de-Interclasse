@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+const tipo = localStorage.getItem("tipo");
+const logado = localStorage.getItem("logado");
+
+if(!logado){
+    window.location.href = "index.html";
+}
+
+if(tipo === "admin"){
+    window.location.href = "admin.html";
+}
+</script>
+
+<button onclick="logout()" class="logout">Sair</button>
+
+<div class="container">
+
+    <h1>Interclasse</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Criar Time</h2>
+
+            <input id="nome" placeholder="Nome do time">
+
+            <select id="turma">
+                <option>1º ano A</option>
+                <option>1º ano B</option>
+                <option>1º ano C</option>
+            </select>
+
+            <select id="categoria">
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+
+            <select id="modalidade">
+                <option>Futebol</option>
+                <option>Vôlei</option>
+                <option>Basquete</option>
+            </select>
+
+            <button onclick="criarTime()">Criar Time</button>
+        </div>
+
+        <div class="card">
+            <h2>Times cadastrados</h2>
+            <div id="lista"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
