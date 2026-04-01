@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Interclasse</h1>
+<button onclick="logout()">Sair</button>
+
+<div class="container">
+    <div>
+        <h2>Criar Time</h2>
+        <input id="nome" placeholder="Nome do time">
+        <select id="turma">
+            <option>1º ano A</option>
+            <option>1º ano B</option>
+            <option>1º ano C</option>
+            <option>2º ano A</option>
+            <option>2º ano B</option>
+            <option>2º ano C</option>
+            <option>3º ano A</option>
+            <option>3º ano B</option>
+            <option>3º ano C</option>
+        </select>
+        <select id="categoria">
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+        <select id="modalidade">
+            <option>Futebol</option>
+            <option>Volei</option>
+            <option>Basquete</option>
+        </select>
+        <button onclick="criarTime()">Criar Time</button>
+    </div>
+
+    <div id="times"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
